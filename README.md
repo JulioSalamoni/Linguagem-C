@@ -37,6 +37,27 @@ int main(){
 }
 ```
 
+
+#### Demonstração de estrutura de Repetição
+```C
+#include <stdio.h>
+int main (){
+    
+    int i,num,res;
+    printf ("Digite um número para fazer a tabuada e tecle Enter\n");
+    scanf ("%d", &num);
+
+    i = 0;
+    while(i <= 10) {
+        res = num * i;
+        printf("%d X %d = %d\n",num, i, res);
+        i++;
+    }
+return 0;
+}
+```
+
+
 #### Demonstração de estrutura simples de Desvio de Fluxo
 ``` C
 #include <stdio.h>
