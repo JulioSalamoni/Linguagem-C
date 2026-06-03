@@ -26,13 +26,30 @@ Vamos listar os itens trabalhados neste repositório:
     * Ponteiro
     * Criação de arquivos
 
-    #### Demonstração de uma estrutura simples
 
+#### Demonstração de uma estrutura simples
 ``` C
-    #include <stdio.h>
-    int main(){
-        int x = 10
-        printf("O valor é %d\n, x);
-        return 0;
-    }
+#include <stdio.h>
+int main(){
+    int x = 10
+    printf("O valor é %d\n, x);
+    return 0;
+}
 ```
+
+#### Demonstração de estrutura simples de Desvio de Fluxo
+``` C
+#include <stdio.h>
+int main (){
+
+    int n;
+    printf ("Digite um número inteiro e tecle Enter\n");
+    scanf ("%d", &n);
+
+    if( n % 2 == 0) {
+        printf ("O Número %d é Par\n",n); 
+    } else {
+        printf ("O Número %d é impar\n",n); 
+    }
+return 0;                                                                                                             
+}
