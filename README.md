@@ -27,11 +27,12 @@ Vamos listar os itens trabalhados neste repositório:
     * Criação de arquivos
 
     #### Demonstração de uma estrutura simples
-    ``` C
+
+``` C
     #include <stdio.h>
     int main(){
         int x = 10
         printf("O valor é %d\n, x);
         return 0;
     }
-    ```
+```
