@@ -16,6 +16,7 @@ int main(){
     float precoProduto;
     int formaPagamento;
     float precoFinal;
+    int parcelas;
 
     printf("Digite o nome do cliente\n");
     fgets(nomeCliente,10,stdin);
@@ -32,11 +33,17 @@ int main(){
     printf("Escolha a forma de pagamento:\nDigite 0 para A Vista\nDigite 1 para Parcelado\n");
     scanf("%d", &formaPagamento);
 
+    if (formaPagamento == 1){
+        printf("Digite o Número de parcelas\n");
+            scanf("%d", &parcelas);
+    } else { (parcelas = 0);
+    }
+
     if (formaPagamento == 0){
-    precoFinal = precoProduto - (precoProduto * 0.10);
+        precoFinal = precoProduto - (precoProduto * 0.10);
     }
     if (formaPagamento == 1){
-    precoFinal = precoProduto + (precoProduto * 0.15);
+        precoFinal = precoProduto + (precoProduto * 0.15);
     }
 
     FILE *arquivo = fopen("files/notaproduto.txt", "a");
@@ -45,6 +52,7 @@ int main(){
     fprintf(arquivo,"Produto: %s", nomeProduto);
     fprintf(arquivo,"Preço: %.2f\n", precoProduto);
     fprintf(arquivo,"Preco Final: %.2f\n",precoFinal);
+    fprintf(arquivo,"Parcelas: %d\n", parcelas);
     fprintf(arquivo,"===================================================================================\n");
 
     fclose(arquivo);
