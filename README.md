@@ -27,7 +27,7 @@ Vamos listar os itens trabalhados neste repositório:
     * Criação de arquivos
 
 
-#### Demonstração de uma estrutura simples
+#### Demonstração de uma estrutura Simples
 ``` C
 #include <stdio.h>
 int main(){
