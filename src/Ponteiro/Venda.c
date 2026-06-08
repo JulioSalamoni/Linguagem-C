@@ -36,7 +36,7 @@ int main(){
     if (formaPagamento == 1){
         printf("Digite o Número de parcelas\n");
             scanf("%d", &parcelas);
-    } else { (parcelas = 0);
+    } else {(parcelas = 0);
     }
 
     if (formaPagamento == 0){
